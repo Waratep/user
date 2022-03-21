@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  user:
+    build: .
+    container_name: 'user'
+    env_file:
+      - ./.env
+    ports:
+      - 3000:3000
