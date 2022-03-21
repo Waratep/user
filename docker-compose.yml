@@ -7,3 +7,10 @@ services:
       - ./.env
     ports:
       - 3000:3000
+    networks:
+      - main
+
+networks:
+  main:
+    external:
+      name: main-network
